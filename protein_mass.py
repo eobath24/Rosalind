@@ -18,9 +18,3 @@ def protein_mass_calc(protein_sequence: str) -> float:
 
     return round(protein_mass, 3) # round number to 3 decimal places
 
-# Executing
-import os
-
-with open(os.path.expanduser(r"C:\Users\Ella\Downloads\rosalind_prtm.txt")) as file:
-    protein_sequence = file.read().replace("\n", "")
-print(protein_mass_calc(protein_sequence))
